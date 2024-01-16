@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar } from "../../components/Navbar/Navbar";
+import { NavBar } from "../../components/NavBar/NavBar";
 import { HeroSection } from "../../components/Hero/Hero";
 import { Order } from "../../components/Order/Order";
 import { Service } from "../../components/Service/Service";
