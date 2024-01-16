@@ -8,7 +8,7 @@ export const Order = () => {
         <div className=" lg:w-[80%] my-4 mx-auto  z-50 lg:rounded-[20px] flex justify-between items-center h-28 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
           <div className="flex-1 pr-9  lg:pr-4 text-left ml-10">
             <div>
-              <p className="text-[12px] lg:text-[14px] text-gray-400">Destination</p>
+              <p className="text-[12px] lg:text-[14px] text-gray-400">Address</p>
               <p className="text-[14px] lg:text-[16px]">Toronto</p>
             </div>
           </div>
@@ -34,7 +34,7 @@ export const Order = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex items-center justify-center bg-green-500 h-full lg:rounded-r-[20px] px-10 cursor-pointer">
+          <div className="flex-1 flex items-center justify-center bg-primary h-full lg:rounded-r-[20px] px-10 cursor-pointer hover:bg-secondary transition duration-500">
             <p className="text-[#fff] font-bold text-[14px] w-[100px] lg:w-[120px] lg:text-[18px] text-center">ORDER NOW</p>
           </div>
         </div>

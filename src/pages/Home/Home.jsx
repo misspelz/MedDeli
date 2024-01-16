@@ -7,6 +7,7 @@ import { Offer } from "../../components/Offer/Offer";
 import { Product } from "../../components/Product/Product";
 import { Contact } from "../../components/Contact/Contact";
 import { Footer } from "../../components/Footer/Footer";
+import { About } from "../../components/About/About";
 
 export const Home = () => {
   const backgroundImageUrl =
@@ -43,6 +44,7 @@ export const Home = () => {
       </div>
 
       <Order />
+      <About />
       <Service />
       <Offer />
       <Product />

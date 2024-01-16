@@ -7,7 +7,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 export const Offer = () => {
   const FeatureCard = ({ icon, title, description }) => (
     <div className="flex flex-col items-center px-10 gap-4 custom-hover hover:border-y-2 hover:shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] rounded-[20px] ">
-      <div className="flex flex-col items-center gap-4 py-8 lg:py-16 custom-hover hover:border-y-2 border-green-500">
+      <div className="flex flex-col items-center gap-4 py-8 lg:py-16 custom-hover hover:border-y-2 border-primary">
         {icon}
         <h5 className="text-[14px] lg:text-lg font-bold">{title}</h5>
         <p className="text-center text-[14px] lg:text-[16px] text-gray-500">
@@ -44,7 +44,7 @@ export const Offer = () => {
     <div className="px-7 lg:px-36 mb-10 flex flex-col lg:flex-row gap-4 lg:gap-20 items-center">
       <div className="lg:w-[40%]">
         <h2 className="text-2xl text-center lg:text-left lg:text-3xl mt-8 lg:mt-16 font-bold">
-          What makes us <span className="text-green-500">Different ?</span>
+          What makes us <span className="text-primary">Different ?</span>
         </h2>
         <p className="text-center lg:text-left mt-4 text-[14px] lg:text-[16px] text-gray-500">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, neque?

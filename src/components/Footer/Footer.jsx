@@ -1,21 +1,31 @@
 import React from "react";
 import { RiFacebookFill } from "react-icons/ri";
-import { FaTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
     <footer className="px-7 lg:px-32 flex flex-col-reverse lg:flex-row justify-between items-center py-10 lg:py-0 lg:h-24 gap-6">
-      <div><p className="text-gray-600 text-[12px] lg:text-[14px]">&copy;All Rights Reserved | Developed by  Pelz</p></div>
       <div>
-        <h3 className="font-bold text-xl lg:text-3xl cursor-pointer text-[#000]">
-          Med<span className="text-green-600 ">Deli.</span>
-        </h3>
+        <p className="text-gray-600 text-[12px] lg:text-[14px]">
+          &copy;All Rights Reserved
+        </p>
       </div>
-      <div className="flex flex-row-reverse lg:flex-row gap-6 ">
+      <div>
+      <Link to="/">
+        <h3 className="font-bold text-xl lg:text-3xl cursor-pointer text-primary flex items-center -ml-4 lg:ml-8">
+          <img src="./jimedix.png" alt="logo" width={50} />
+          JIMEDIX
+        </h3>
+      </Link>
+      </div>
+      <div className="flex flex-row-reverse lg:flex-row gap-6 items-center justify-center">
         <RiFacebookFill color="green" className="cursor-pointer" />
-        <FaTwitter color="green" className="cursor-pointer" />
-        <FaYoutube color="green" className="cursor-pointer" />
+        <FaXTwitter color="green" className="cursor-pointer" />
+        <FaInstagram color="green" className="cursor-pointer" />
+        <FaTiktok color="green" className="cursor-pointer" />
       </div>
     </footer>
   );

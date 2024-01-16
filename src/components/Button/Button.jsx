@@ -3,7 +3,7 @@ import React from "react";
 export const Button = ({
   children,
   className,
-  bg = "bg-base",
+  bg = "bg-primary",
   w = "w-[123px]",
   h = "h-[42px]",
   text = "text-[#fff]",
