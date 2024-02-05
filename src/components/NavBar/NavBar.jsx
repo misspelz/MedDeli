@@ -17,7 +17,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center py-4 lg:py-8 relative lg:px-40">
+    <div className="flex justify-between items-center py-4 lg:py-8 relative lg:px-24">
       <Link to="/">
         <h3 className="font-bold text-xl lg:text-3xl cursor-pointer text-primary flex items-center">
           <img src="./jimedix.png" alt="logo" width={50} />

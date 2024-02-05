@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="px-7 lg:px-32 flex flex-col-reverse lg:flex-row justify-between items-center py-10 lg:py-0 lg:h-24 gap-6">
+    <footer className="px-7 lg:px-32 flex flex-col-reverse lg:flex-row justify-between items-center py-10 lg:py-0 lg:h-24 gap-6 bg-[#1a2423]">
       <div>
-        <p className="text-gray-600 text-[12px] lg:text-[14px]">
-          &copy;All Rights Reserved
+        <p className="text-white text-[12px] lg:text-[14px]">
+          &copy; All Rights Reserved
         </p>
       </div>
       <div>
@@ -22,10 +22,10 @@ export const Footer = () => {
       </Link>
       </div>
       <div className="flex flex-row-reverse lg:flex-row gap-6 items-center justify-center">
-        <RiFacebookFill color="green" className="cursor-pointer" />
-        <FaXTwitter color="green" className="cursor-pointer" />
-        <FaInstagram color="green" className="cursor-pointer" />
-        <FaTiktok color="green" className="cursor-pointer" />
+        <RiFacebookFill color="white" className="cursor-pointer" />
+        <FaXTwitter color="white" className="cursor-pointer" />
+        <FaInstagram color="white" className="cursor-pointer" />
+        <FaTiktok color="white" className="cursor-pointer" />
       </div>
     </footer>
   );
