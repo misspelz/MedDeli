@@ -4,16 +4,7 @@ import Input from "../Input/Input";
 import { Link } from "react-router-dom";
 
 export const TeamHero = () => {
-  const [isAboutUsHovered, setIsAboutUsHovered] = useState(false);
-
-  // Step 3: Event handler for hover effect
-  const handleAboutUsHover = () => {
-    setIsAboutUsHovered(true);
-  };
-
-  const handleAboutUsLeave = () => {
-    setIsAboutUsHovered(false);
-  };
+ 
   return (
     <section className="w-full mt-4 lg:mt-6 lg:gap-10 md:pb-20 lg:pb-0 relative">
       <div className=" h-[200px] lg:h-[400px] lg:pt-10 flex flex-col gap-4 items-center ">
@@ -42,32 +33,12 @@ export const TeamHero = () => {
 
           <Link
             to="/about-us"
-            onMouseEnter={handleAboutUsHover}
-            onMouseLeave={handleAboutUsLeave}
+           
           >
-            <span className="flex items-center gap-10 text-gray-200 cursor-pointer relative">
+             <li className="flex items-center gap-10 text-gray-200 cursor-pointer">
               <span className="h-[2px] w-10 bg-gray-200"></span>
-              <span className="hover:text-primary transition duration-500">
-                About Us
-              </span>
-              {isAboutUsHovered && (
-                <div
-                  className="absolute top-5 left-20 bg-white p-4 shadow-md w-[200px] gap-3 flex flex-col transition duration-500"
-                  onMouseEnter={handleAboutUsHover}
-                  onMouseLeave={handleAboutUsLeave}
-                >
-                  <Link to="/about-us" className="text-gray-800 capitalize">
-                    Our Story
-                  </Link>
-                  <Link to="/services" className="text-gray-800 capitalize">
-                    Our Services
-                  </Link>
-                  <Link to="/our-team" className="text-gray-800 capitalize">
-                    Our Management Team
-                  </Link>
-                </div>
-              )}
-            </span>
+              About Us
+            </li>
           </Link>
 
           <Link to="/services">
