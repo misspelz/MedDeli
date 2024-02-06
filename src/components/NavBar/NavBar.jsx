@@ -44,20 +44,22 @@ export const NavBar = () => {
         </div>
       )}
 
-      {isOpen && isBlogRoute && (
+      {isOpen && (
         <div className="block lg:hidden absolute top-0 -right-4  bg-primary w-[150p h-[100vh] px-5 pt-20 transition duration-200 z-[99]">
-          <Link to="/blog">
-            <Button
-              className=" hover:bg-[#fff] hover:text-secondary transition duration-500 bg-red-700"
-              text="text-[14px] text-[#fff]"
-              rounded="rounded-[6px]"
-              bg="bg-secondary "
-              w="w-[100px]"
-              h="h-[30px] lg:h-[42px]"
-            >
-              BLOG
-            </Button>
-          </Link>
+          {!isBlogRoute && (
+            <Link to="/blog">
+              <Button
+                className=" hover:bg-[#fff] hover:text-secondary transition duration-500 bg-red-700"
+                text="text-[14px] text-[#fff]"
+                rounded="rounded-[6px]"
+                bg="bg-secondary "
+                w="w-[100px]"
+                h="h-[30px] lg:h-[42px]"
+              >
+                BLOG
+              </Button>
+            </Link>
+          )}
 
           <ul className="uppercase flex flex-col gap-4 text-[14px] mt-5">
             <Link to="/">
