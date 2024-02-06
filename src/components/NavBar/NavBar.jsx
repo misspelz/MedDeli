@@ -44,7 +44,7 @@ export const NavBar = () => {
         </div>
       )}
 
-      {isOpen && !isBlogRoute && (
+      {isOpen && isBlogRoute && (
         <div className="block lg:hidden absolute top-0 -right-4  bg-primary w-[150p h-[100vh] px-5 pt-20 transition duration-200 z-[99]">
           <Link to="/blog">
             <Button
